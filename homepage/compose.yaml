@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    ports:
+      - 3000:3000
+    volumes:
+      - /root/homepage/config:/app/config # Make sure your local config directory exists
+      - /root/homepage/images:/app/public/images
+      - /root/homepage/icons:/app/public/icons
+    restart: unless-stopped
