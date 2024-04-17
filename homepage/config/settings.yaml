@@ -1,0 +1,35 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/settings
+title: My Homepage
+
+background: 
+  image: https://wallpapercave.com/wp/wp9667360.jpg
+  blur: none # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
+  saturate: 0 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+  brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
+
+cardBlur: xl
+
+useEqualHeights: true
+
+headerStyle: clean
+
+layout:
+  Media:
+    header: true
+    style: row
+    columns: 4
+  Server and Monitoring:
+    header: true
+    style: row
+    columns: 4
+  Misc:
+    header: true
+    style: row
+    columns: 4
+  
+quicklaunch:
+  searchDescriptions: true
+  showSearchSuggestions: true
+

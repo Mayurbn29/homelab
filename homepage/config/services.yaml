@@ -1,0 +1,173 @@
+---
+# For configuration options and examples, please see:
+# url or ip:port/latest/configs/services
+
+- Media:
+    - Jellyfin:
+        icon: jellyfin.png
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Media Server for Movies, Series and Songs
+        widget:
+            type: jellyfin
+            url: url or ip:port
+            key: key
+            enableBlocks: true # optional, defaults to false
+            enableNowPlaying: true # optional, defaults to true
+    - Radarr:
+        icon: radarr.png 
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Movie management
+        widget:
+            type: radarr
+            url: url or ip:port
+            key: key
+            enableQueue: true # optional, defaults to false
+    - Sonarr:
+        icon: sonarr.png
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Series management
+        widget:
+            type: sonarr
+            url: url or ip:port
+            key: key
+            enableQueue: true # optional, defaults to false
+    - Jellyseerr:
+        icon: jellyseerr.png 
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Request management and media discovery tool for the Jellyfin ecosystem
+        widget:
+            type: jellyseerr
+            url: url or ip:port
+            key: key
+    - Bazarr:
+        icon: bazarr.png 
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Subtitle management
+        widget:
+            type: bazarr
+            url: url or ip:port
+            key: key
+    - Nextcloud:
+        icon: nextcloud.png 
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Self-hosted cloud storage
+        widget:
+            type: nextcloud
+            url: url or ip:port
+            username: user
+            password: pass
+    - Readarr:
+        icon: readarr.png 
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Books management
+        widget:
+            type: readarr
+            url: url or ip:port
+            key: key
+    - Calibre-Web:
+        icon: calibre-web.png 
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Self-hosted Ebook library & manager
+        widget:
+            type: calibreweb
+            url: url or ip:port
+    # - Calendar:
+    #     widget:
+    #         type: calendar
+    #         view: monthly # optional - possible values monthly, agenda
+    #         maxEvents: 10 # optional - defaults to 10
+    #         showTime: true # optional - show time for event happening today - defaults to false
+    #         timezone: Asia/Kolkata # optional and only when timezone is not detected properly (slightly slower performance) - force timezone for ical events (if it's the same - no change, if missing or different in ical - will be converted to this timezone)
+    #         integrations: # optional
+    #             - type: sonarr # active widget type that is currently enabled on homepage - possible values: radarr, sonarr, lidarr, readarr, ical
+    #               service_group: Media # group name where widget exists
+    #               service_name: Sonarr # service name for that widget
+    #               params: # optional - additional params for the service
+    #                 unmonitored: true # optional - defaults to false, used with *arr stack
+    #             - type: radarr # active widget type that is currently enabled on homepage - possible values: radarr, sonarr, lidarr, readarr, ical
+    #               service_group: Media # group name where widget exists
+    #               service_name: Radaarr # service name for that widget
+    #               params: # optional - additional params for the service
+    #                 unmonitored: true # optional - defaults to false, used with *arr stack
+    #             - type: readarr # active widget type that is currently enabled on homepage - possible values: radarr, sonarr, lidarr, readarr, ical
+    #               service_group: Media # group name where widget exists
+    #               service_name: Readaarr # service name for that widget
+    #               params: # optional - additional params for the service
+    #                 unmonitored: true # optional - defaults to false, used with *arr stack        
+- Server and Monitoring:
+    - Proxmox:
+        icon: proxmox.png
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Open-source virtualization and container management platform
+        widget:
+            type: proxmox
+            url: url or ip:port
+            username: user
+            password: pass
+    - Grafana:
+        icon: grafana.png
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Monitoring and analytics platform for metrics visualization
+        widget:
+            type: grafana
+            url: url or ip:port
+            username: user
+            password: pass
+    - InfluxDB:
+        icon: influxdb.png
+        href: url or ip:port/
+        siteMonitor: url or ip:port/
+        description: Time series database for high-velocity metrics
+
+- Misc:
+    - Fileserver:
+        icon: files.png
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Cockpit Fileserver - Web-based interface for server files management
+    - Prowlarr:
+        icon: prowlarr.png
+        href: url or ip:port/
+        siteMonitor: url or ip:port/
+        description: Indexer manager for Usenet and torrents
+        widget:
+            type: prowlarr
+            url: url or ip:port
+            key: key
+    - Jackett:
+        icon: jackett.png
+        href: url or ip:port/
+        siteMonitor: url or ip:port/
+        description: Proxy server for searching torrent trackers
+        widget:
+            type: jackett
+            url: url or ip:port
+    - QBitTorrent:
+        icon: si-qbittorrent
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Proxy server for searching torrent trackers
+        widget:
+            type: qbittorrent
+            url: url or ip:port
+    - Vaultwarden:
+        icon: bitwarden.png
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Lightweight, self-hosted Bitwarden password manager alternative
+    - Kasm-Workspaces:
+        icon: kasm.png
+        href: url or ip:port
+        siteMonitor: url or ip:port
+        description: Web-delivered, containerized desktop and application streaming
+    

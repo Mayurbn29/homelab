@@ -1,0 +1,23 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmarks
+
+- Project Links:
+    - Github:
+        - abbr: GH
+          href: https://github.com/Mayurbn29
+          icon: github.png
+    - My Notes:
+        - abbr: Notes
+          href: https://notes.mayurbn.site
+          icon: nextcloud-notes.png
+
+- Socials:
+    - LinkedIn:
+        - abbr: LIn
+          href: https://www.linkedin.com/in/mayur-b-n-68828a21a/
+          icon: linkedin.png
+    - Instagram:
+        - abbr: Insta
+          href: https:instagram.com/mayurbn_29
+          icon: instagram.png      
